@@ -6,7 +6,7 @@
   "scripts": {
     "css-build": "node-sass --output-style compressed --watch scss/main.scss dist/css/main.min.css",
     "css-watch": "npm run css-build -- --watch",
-    "dev": "npm run css-watch",
+    "dev": "concurrently \"npm run css-watch\" \"live-server --open=dist\"",
     "build": "purgecss --config ./purgecss.config.js"
   },
   "keywords": [
@@ -19,6 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "concurrently": "^7.0.0",
+    "live-server": "^1.2.1",
     "node-sass": "^7.0.1",
     "purgecss": "^4.1.3",
     "sass": "^1.45.2"
