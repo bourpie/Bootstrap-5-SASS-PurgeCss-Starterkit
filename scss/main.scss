@@ -1,6 +1,14 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'components/carousel';
 
-.class {
-    color: white;
+body {
+    display: flex;
+}
+
+main {
+    height: 100%;
+}
+
+section {
+    padding-top: 56px;
 }
