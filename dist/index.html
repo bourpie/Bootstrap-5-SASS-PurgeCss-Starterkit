@@ -45,10 +45,13 @@
                             <a class="nav-link" href="#feature1">Feature 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#feature2">Feature 2</a>
+                            <a class="nav-link" href="#feature2">Accordion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#feature3">Feature 3</a>
+                            <a class="nav-link" href="#feature3">Tabs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modal">Modal</a>
                         </li>
                     </ul>
                 </div>
@@ -179,53 +182,111 @@
         </section>
         <section id="feature2">
             <div class="container">
-                <div class="row featurette">
-                    <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                                yourself.</span></h2>
-                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea
-                            of
-                            how this layout would work with some actual real-world content in place.</p>
+                <h2 class="mb-5 text-center">Accordion</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-5 order-md-1">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                            width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                                dy=".3em">500x500</text>
-                        </svg>
-
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="feature3" class="bg-light">
             <div class="container">
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span>
-                        </h2>
-                        <p class="lead">And yes, this is the last block of representative placeholder content. Again,
-                            not
-                            really intended to be actually read, simply here to give you a better view of what this
-                            would
-                            look like with some actual content. Your content.</p>
+                <h2 class="mb-5 text-center">Tabs</h2>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Home</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
                     </div>
-                    <div class="col-md-5">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                            width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                                dy=".3em">500x500</text>
-                        </svg>
-
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="bd-footer py-5 bg-dark text-light">
+        <section id="modal">
+            <div class="container">
+                <h2 class="mb-5 text-center">Modals</h2>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalFullscreen">Full screen</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalFullscreenSm">Full screen below sm</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalFullscreenMd">Full screen below md</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalFullscreenLg">Full screen below lg</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalFullscreenXl">Full screen below xl</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>
+            </div>
+        </section>
+
+        <footer id="footer" class="bd-footer py-5 bg-dark text-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 mb-3">
@@ -317,6 +378,109 @@
         </footer>
     </main>
     <a class="go-up-btn" href="#myCarousel">Up</a>
+
+    <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenSm" tabindex="-1" aria-labelledby="exampleModalFullscreenSmLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h4" id="exampleModalFullscreenSmLabel">Full screen below sm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenMd" tabindex="-1" aria-labelledby="exampleModalFullscreenMdLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h4" id="exampleModalFullscreenMdLabel">Full screen below md</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenLg" tabindex="-1" aria-labelledby="exampleModalFullscreenLgLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-lg-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h4" id="exampleModalFullscreenLgLabel">Full screen below lg</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenXl" tabindex="-1" aria-labelledby="exampleModalFullscreenXlLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h4" id="exampleModalFullscreenXlLabel">Full screen below xl</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenXxl" tabindex="-1"
+        aria-labelledby="exampleModalFullscreenXxlLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h4" id="exampleModalFullscreenXxlLabel">Full screen below xxl</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

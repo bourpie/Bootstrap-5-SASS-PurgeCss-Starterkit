@@ -1,4 +1,5 @@
 const goUpBtn = document.querySelector('.go-up-btn');
+const el = document.getElementById('footer');
 
 document.addEventListener('scroll', (e) => {
 
@@ -8,7 +9,7 @@ document.addEventListener('scroll', (e) => {
         goUpBtn.style.opacity = '0';
     }
 
-    if (window.scrollY >= 3576) {
+    if (window.scrollY >= 4400) {
         goUpBtn.style.backgroundColor = 'white';
         goUpBtn.style.color = 'black';
     } else {
