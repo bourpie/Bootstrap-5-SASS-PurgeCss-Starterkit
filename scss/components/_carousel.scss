@@ -1,11 +1,24 @@
 .carousel-caption {
     position: relative;
-    z-index: 10;
     right: auto;
-    bottom: 1.25rem;
     left: auto;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
+}
+
+.carousel-fade {
+    .carousel-inner {
+
+        .carousel-item {
+            opacity: 0;
+        }
+
+        .active {
+            opacity: 1;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .carousel-caption {
+        width: 80%;
+    }
 }

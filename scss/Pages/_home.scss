@@ -1,0 +1,14 @@
+.home {
+
+    section {
+
+        padding: 5rem 0;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    }
+}

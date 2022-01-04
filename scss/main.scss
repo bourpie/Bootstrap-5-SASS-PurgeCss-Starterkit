@@ -1,14 +1,13 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
+
+// pages
+@import 'pages/home';
+
+// components
+@import 'components/placeholder-img';
 @import 'components/carousel';
+@import 'components/goUpBtn';
 
-main {
-    height: 100%;
-}
-
-section {
-    padding-top: 56px;
-}
-
-.test {
-    color: rgb(59, 9, 9);
+.red {
+    color: red;
 }
