@@ -7,3 +7,8 @@
 @import 'components/placeholder-img';
 @import 'components/carousel';
 @import 'components/goUpBtn';
+
+.navbar-dark,
+.bg-dark {
+    background-color: #000000 !important;
+}

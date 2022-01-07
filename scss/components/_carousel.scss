@@ -17,6 +17,24 @@
     }
 }
 
+.carousel-item {
+    background-size: cover;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url(../../dist/assets/img/slide1.jpg);
+
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(../../dist/assets/img/slide2.jpg);
+
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url(../../dist/assets/img/slide3.jpg);
+}
+
 @include media-breakpoint-down(sm) {
     .carousel-caption {
         width: 80%;

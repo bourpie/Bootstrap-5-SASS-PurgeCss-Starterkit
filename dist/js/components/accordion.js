@@ -64,6 +64,5 @@ Vue.component("accordion", {
                 </div>
             </div>
         </section>
-    
     `
 });

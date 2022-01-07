@@ -1,7 +1,7 @@
 Vue.component('carousel', { 
     
     template: `
-        <section class="carousel carousel-fade slide h-100 bg-dark" data-bs-ride="carousel">
+        <section class="carousel slide h-100 bg-dark" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -13,9 +13,9 @@ Vue.component('carousel', {
 
                     <div class="container h-100 d-flex align-items-center justify-content-center">
                         <div class="carousel-caption">
-                            <h1>Example headline.</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                            <h1>Example headline</h1>
+                            <p>Photo de cottonbro provenant de Pexels</p>
+                            <p><a class="btn btn-lg btn-dark" href="https://www.pexels.com/fr-fr/@cottonbro?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Voir son portfolio</a></p>
                         </div>
                     </div>
                 </div>
@@ -24,8 +24,8 @@ Vue.component('carousel', {
                     <div class="container h-100 d-flex align-items-center justify-content-center">
                         <div class="carousel-caption">
                             <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            <p>Photo de Alex Conchillos provenant de Pexels</p>
+                            <p><a class="btn btn-lg btn-dark" href="https://www.pexels.com/fr-fr/@slendyalex?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Voir son portfolio</a></p>
                         </div>
                     </div>
                 </div>
@@ -34,8 +34,8 @@ Vue.component('carousel', {
                     <div class="container h-100 d-flex align-items-center justify-content-center">
                         <div class="carousel-caption">
                             <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            <p>Photo de Rodrigo Souza provenant de Pexels.</p>
+                            <p><a class="btn btn-lg btn-dark" href="https://www.pexels.com/fr-fr/@rodrigo-souza-1275988?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Voir son portfolio</a></p>
                         </div>
                     </div>
                 </div>

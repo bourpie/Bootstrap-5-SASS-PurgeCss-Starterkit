@@ -4,6 +4,10 @@
 
         padding: 5rem 0;
 
+        &:first-child {
+            padding: 0;
+        }
+
         @include media-breakpoint-up(md) {
             display: flex;
             align-items: center;
