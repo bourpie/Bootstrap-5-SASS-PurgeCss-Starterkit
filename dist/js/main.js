@@ -9,11 +9,19 @@ document.addEventListener('scroll', (e) => {
         goUpBtn.style.opacity = '0';
     }
 
-    if (window.scrollY >= 4400) {
+    if (window.scrollY >= 4700) {
         goUpBtn.style.backgroundColor = 'white';
         goUpBtn.style.color = 'black';
     } else {
         goUpBtn.style.backgroundColor = 'black';
         goUpBtn.style.color = 'white';
     }
+});
+
+new Vue({
+    el: '#header',
+});
+
+new Vue({
+    el: '#app',
 });

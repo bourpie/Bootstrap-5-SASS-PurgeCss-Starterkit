@@ -1,7 +1,7 @@
 /* global module */
 /* eslint no-undef: "error" */
 module.exports = {
-    content: ['./dist/index.html'],
+    content: [`./dist/index.html`, `./dist/js/components/**/*.js`],
     css: ['./dist/css/main.css'],
     // Add css classes used from javascript to ignore purgecss :
     safelist: [

@@ -25,359 +25,26 @@
 
 <body class="home vh-100 flex-column">
 
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#myCarousel">Carousel</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#myCarousel">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#feature1">Feature 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#feature2">Accordion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#feature3">Tabs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#modal">Modal</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <main class="vh-100">
-        <section id="myCarousel" class="carousel carousel-fade slide h-100 bg-dark" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
+    <main-header id="header"></main-header>
 
-                    <div class="container h-100 d-flex align-items-center justify-content-center">
-                        <div class="carousel-caption">
-                            <h1>Example headline.</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item h-100">
-
-                    <div class="container h-100 d-flex align-items-center justify-content-center">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item h-100">
-
-                    <div class="container h-100 d-flex align-items-center justify-content-center">
-                        <div class="carousel-caption">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-        <section id="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                                dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>Some representative placeholder content for the three columns of text below the carousel.
-                            This is
-                            the first column.</p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                                dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
-                            second column.</p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                                dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>And lastly this, the third column of representative placeholder content.</p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
-                </div><!-- /.row -->
-            </div>
-        </section>
-        <section id="feature1" class="bg-light">
-            <div class="container">
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
-                                your
-                                mind.</span></h2>
-                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some
-                            exciting
-                            prose here.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                            width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                                dy=".3em">500x500</text>
-                        </svg>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="feature2">
-            <div class="container">
-                <h2 class="mb-5 text-center">Accordion</h2>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item #1
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                until the collapse plugin adds the appropriate classes that we use to style each
-                                element. These classes control the overall appearance, as well as the showing and hiding
-                                via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="feature3" class="bg-light">
-            <div class="container">
-                <h2 class="mb-5 text-center">Tabs</h2>
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="true">Home</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        ...</div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="modal">
-            <div class="container">
-                <h2 class="mb-5 text-center">Modals</h2>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModalFullscreen">Full screen</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModalFullscreenSm">Full screen below sm</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModalFullscreenMd">Full screen below md</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModalFullscreenLg">Full screen below lg</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModalFullscreenXl">Full screen below xl</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>
-            </div>
-        </section>
-
-        <footer id="footer" class="bd-footer py-5 bg-dark text-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 mb-3">
-                        <a class="d-inline-flex align-items-center mb-3 link-light text-decoration-none" href="/"
-                            aria-label="Bootstrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2"
-                                viewBox="0 0 118 94" role="img">
-                                <title>Bootstrap</title>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-                                    fill="currentColor"></path>
-                            </svg>
-                            <span class="fs-5">Bootstrap</span>
-                        </a>
-                        <ul class="list-unstyled small">
-                            <li class="mb-2">Designed and built with all the love in the world by the <a
-                                    class="link-light" href="/docs/5.0/about/team/">Bootstrap team</a> with the help of
-                                <a class="link-light" href="https://github.com/twbs/bootstrap/graphs/contributors">our
-                                    contributors</a>.
-                            </li>
-                            <li class="mb-2">Code licensed <a class="link-light"
-                                    href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank"
-                                    rel="license noopener">MIT</a>, docs <a class="link-light"
-                                    href="https://creativecommons.org/licenses/by/3.0/" target="_blank"
-                                    rel="license noopener">CC BY 3.0</a>.</li>
-                            <li class="mb-2">Currently v5.0.2.</li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                        <h3 class="h5">Links</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a class="link-light" href="/">Home</a></li>
-                            <li class="mb-2"><a class="link-light" href="/docs/5.0/">Docs</a></li>
-                            <li class="mb-2"><a class="link-light" href="/docs/5.0/examples/">Examples</a></li>
-                            <li class="mb-2"><a class="link-light" href="https://themes.getbootstrap.com/">Themes</a>
-                            </li>
-                            <li class="mb-2"><a class="link-light" href="https://blog.getbootstrap.com/">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 mb-3">
-                        <h3 class="h5">Guides</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a class="link-light" href="/docs/5.0/getting-started/">Getting started</a>
-                            </li>
-                            <li class="mb-2"><a class="link-light" href="/docs/5.0/examples/starter-template/">Starter
-                                    template</a></li>
-                            <li class="mb-2"><a class="link-light" href="/docs/5.0/getting-started/webpack/">Webpack</a>
-                            </li>
-                            <li class="mb-2"><a class="link-light" href="/docs/5.0/getting-started/parcel/">Parcel</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 mb-3">
-                        <h3 class="h5">Projects</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a class="link-light" href="https://github.com/twbs/bootstrap">Bootstrap
-                                    5</a></li>
-                            <li class="mb-2"><a class="link-light"
-                                    href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a>
-                            </li>
-                            <li class="mb-2"><a class="link-light" href="https://github.com/twbs/icons">Icons</a></li>
-                            <li class="mb-2"><a class="link-light" href="https://github.com/twbs/rfs">RFS</a></li>
-                            <li class="mb-2"><a class="link-light"
-                                    href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 mb-3">
-                        <h3 class="h5">Community</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a class="link-light"
-                                    href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-                            <li class="mb-2"><a class="link-light"
-                                    href="https://github.com/twbs/bootstrap/discussions">Discussions</a>
-                            </li>
-                            <li class="mb-2"><a class="link-light" href="https://github.com/sponsors/twbs">Corporate
-                                    sponsors</a></li>
-                            <li class="mb-2"><a class="link-light" href="https://opencollective.com/bootstrap">Open
-                                    Collective</a></li>
-                            <li class="mb-2"><a class="link-light"
-                                    href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
-                            <li class="mb-2"><a class="link-light"
-                                    href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack
-                                    Overflow</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <main id="app" class="vh-100">
+        <carousel id="myCarousel"></carousel>
+        <products id="features"></products>
+        <featurette id="feature1"></featurette>
+        <accordion id="accordion"></accordion>
+        <tabs id="tabs"></tabs>
+        <modals id="modals"></modals>
+        <footer id="footer">
+            <main-footer></main-footer>
         </footer>
     </main>
+
+    <modal-types></modal-types>
+
     <a class="go-up-btn" href="#myCarousel">Up</a>
+
+    <!-- Modal containers -->
 
     <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
         aria-hidden="true">
@@ -481,7 +148,17 @@
             </div>
         </div>
     </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/carousel.js"></script>
+    <script src="js/components/products.js"></script>
+    <script src="js/components/featurette.js"></script>
+    <script src="js/components/accordion.js"></script>
+    <script src="js/components/tabs.js"></script>
+    <script src="js/components/modals.js"></script>
+    <script src="js/components/footer.js"></script>
     <script src="js/main.js"></script>
 </body>
 
