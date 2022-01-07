@@ -1,6 +1,6 @@
 # Bootstap 5 SASS and PurgeCSS starter kit
 
-Bootstrap 5 Carousel template with Sass and PurgeCss configs.
+Bootstrap 5 template with Sass and PurgeCss configs. PurgeCss Whitelisting for Bootstrap Js Components included.
 
 ## Install
 
