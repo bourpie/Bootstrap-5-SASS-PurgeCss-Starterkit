@@ -1,10 +1,12 @@
 Vue.component('go-up', {
+    props: ['from'],
     template: `
         <button 
             ref="button" 
             aria-label="Go Up"
             v-on:click.prevent="scroll(0,0)" 
-            class="go-up-btn">&#8679;
+            class="go-up-btn">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" class="svg-inline--fa fa-arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M374.6 246.6C368.4 252.9 360.2 256 352 256s-16.38-3.125-22.62-9.375L224 141.3V448c0 17.69-14.33 31.1-31.1 31.1S160 465.7 160 448V141.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160C387.1 213.9 387.1 234.1 374.6 246.6z"></path></svg>
         </button>
     `,
     mounted() {
@@ -12,12 +14,12 @@ Vue.component('go-up', {
     },
     methods: {
         scrollHandler() {
-            const thisBtn = this.$refs.button;   
+            const button = this.$refs.button;   
             document.addEventListener('scroll', (e) => {  
-                if (window.scrollY > 300) {
-                    thisBtn.style.opacity = '1';
+                if (window.scrollY > this.from) {
+                    button.style.opacity = '1';
                 } else {
-                    thisBtn.style.opacity = '0';
+                    button.style.opacity = '0';
                 }
             });
         }
