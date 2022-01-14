@@ -4,7 +4,7 @@
   "description": "Bootstrap 5, SASS and purgecss",
   "main": "dist/index.html",
   "scripts": {
-    "css-build": "node-sass --output-style compressed -rw scss -o dist/css/",
+    "css-build": "node-sass --output-style compressed -rw src/scss -o dist/css/",
     "css-watch": "npm run css-build -- --watch",
     "dev": "concurrently \"npm run css-watch\" \"live-server --open=dist\"",
     "build": "purgecss --config ./purgecss.config.js"
